@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Explorer: Task Manager</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="app-container">
+        <header>
+            <h1>Task Explorer</h1>
+            <p class="subtitle">Vanilla JavaScript & DOM API</p>
+        </header>
+
+        <form id="task-form">
+            <input type="text" id="task-input" placeholder="What needs to be done?" autocomplete="off" required>
+            <button type="submit" id="add-btn">Add Task</button>
+        </form>
+
+        <div class="filter-group" id="filter-container">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="pending">Pending</button>
+            <button class="filter-btn" data-filter="completed">Completed</button>
+        </div>
+
+        <main>
+            <ul id="task-list">
+                </ul>
+        </main>
+
+        <footer>
+            <span id="task-counter">0 items left</span>
+            <button id="clear-completed-btn">Clear Completed</button>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
